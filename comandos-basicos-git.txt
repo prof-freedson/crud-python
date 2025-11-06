@@ -1,4 +1,17 @@
+ATENÇÃO: primeiramente, vamos remover as credenciais
+do Github no Windows, caso tenham sido criadas
+
+1) Fluxo no Windows:
+
+Menu Iniciar -> Gerenciador de Credenciais -> Credenciais do Windows
+
+2) Selecione a credencial que contém 'github'
+
+3) Clique em "Remover" e confirme em seguida.
+
+======================================
 Principais comandos básicos do Git
+======================================
 
 1) Configurando nome do usuário
 git config --global user.name nome-do-seu-usuario
@@ -18,3 +31,32 @@ git init
 6) Adicionar os arquivos para
 o envio ao Github
 git add .
+
+7) Adicionar mensagem sobre
+os arquivos para o envio 
+ao Github
+git commit -m "Sua mensagem"
+
+8) Alterar a nome da ramificação
+do repositório local (computador
+ou notebook) para 'main'
+git branch -M main
+
+9) Referenciar o repositório local
+para o repositório remoto (Github)
+git remote add origin https://github.com/seu-repositorio-github.git
+
+10) Realizar o envio do repositorio
+local para o remoto
+git push -u origin main
+
+OBS: depois de confirmado o envio do repositório
+local para o remoto, toda alteração posterior
+deverá ser enviada ao Github com os comandos
+a seguir
+
+git add .
+
+git commit -m "Nova mensagem"
+
+git push
